@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Student Registration Form </title> 
+        <script> 
+            function validate() { 
+                    var rn = document.getElementById('Roll'); 
+                    if(rn.value== "") { 
+                        alert("Roll No Cannot be Empty"); 
+                        return false; 
+                    } 
+                    if (rn.value.search(/[0-9]{4}-[0-9]{2}-[0-9]{3}-[0-9]{3}$/)!=0) { 
+                        alert('Invaliad Roll Number'); 
+                        return false; 
+                    } 
+                    var sn=document.getElementById("Name"); 
+                    if (sn.value == "" || sn.value.search(/[A-Z a-z]*$/)!=0) { 
+                        alert('Invaliad Name'); 
+                        return false; 
+                    } 
+                    var pass = document.getElementById('pwd'); 
+                    var cpass = document.getElementById('cpwd'); 
+                    if(pass.value == "" || cpass.value== "" || pass.value != cpass.value) { 
+                        alert("Password donot Match"); 
+                        pass.focus(); 
+                        return false; 
+                    } 
+                    var pho=document.getElementById("PhNo"); 
+                    if (pho.value.search(/[0-9]{10}$/)!=0) { 
+                        alert('Invaliad Phone Number'); 
+                        return false; 
+                    } 
+                    var em=document.getElementById("Email"); 
+                    if (em.value.search(/[A-Z a-z 0-9._]*@[A-Z a-z]*\.[A-Z a-z]*$/)==0) 
+                    { 
+ 
+ 
+ 
+ 
+ 
+ 
+                        return true; 
+                      } 
+                    else { 
+                        alert("Not a valid e-mail address"); 
+                        return false; 
+                    } 
+                } 
+        
+           </script> 
+    </head> 
+    <body> 
+       <center> <img src="logo.png",align:centre></center> 
+       <center> 
+        <table> 
+            <tr> 
+                <a href="./index.html"> <p style="color: blue; font-family: 'Arial', sans-serif;font-size: 
+60;">Home</p></a> 
+                
+            </tr>           
+            
+            <tr> 
+                <a href="./about.html"> <p style="color: blue; font-family: 'Arial', sans-serif;font-size: 
+60;">About</p></a> 
+                
+                
+            </tr>         
+            <tr> 
+                <a href="./vision.html"> <p style="color: blue; font-family: 'Arial', sans-serif;font-size: 
+60;">Vision</p></a> 
+                
+                
+            </tr> 
+            
+            <tr> 
+                <a href="./mission.html"> <p style="color: blue; font-family: 'Arial', 
+sans-serif;font-size: 60;">Mission</p></a> 
+                
+                
+            </tr> 
+            
+            <tr> 
+ 
+ 
+ 
+ 
+ 
+ 
+                <a href="./studentregister.html"> <p style="color: blue; font-family: 'Arial', 
+sans-serif;font-size: 60;">Student Registration form</p></a> 
+                
+                        
+            </tr> 
+            
+        </table> 
+       </center> 
+      
+        
+       <center> <img src="mainpage.png",width="800px",height="600px"></center> 
+       <center> 
+        <h1 style="color:navy;font-family:'Times New Roman', Times, serif;">UG Program</h1> 
+        <h2 style="color:darkcyan;font-family:'Times New Roman', Times, serif;">Computer 
+Science Engineering</h2> 
+       </center> 
+        
+       <br> 
+       <br> 
+      
+        <h3 style="color:navy;font-family:'Times New Roman', Times, serif;"> 
+          Student registration Form  </h3> 
+           <form method='get' action='' onsubmit="return validate();"> 
+            <label for="Roll">Roll            </label><br> 
+            <input type="text" name="Roll" id="Roll"> 
+            <br> 
+            <label for="Name">Name</label><br> 
+            <input type="text" name="Name" id="Name"> 
+            <br> 
+            <label for="Year">Year</label><br> 
+            <input type="number" name="Year" id="Year"> 
+            <br> 
+            <label for="PhNo">Phone Number</label><br> 
+            <input type="number" name="PhNo" id="PhNo"> 
+            <br> 
+            <label for="pwd">Password</label><br> 
+            <input type="password" name="pwd" id="pwd"> 
+            <br> 
+            <label for="cpwd">Confirm Password</label><br> 
+            <input type="password" name="cpwd" id="cpwd"> 
+            <br> 
+            <label for="Email">Email ID</label><br> 
+ 
+ 
+ 
+ 
+ 
+ 
+            <input type="text" name="Email" id="Email"> 
+            <br> 
+            <label for="subjects">Subjects</label><br> 
+            <input type="checkbox" name="subjects" id="DSA"> 
+            <label for="DSA">DSA</label> 
+            <br> 
+            <input type="checkbox" name="subjects" id="OOPs using Java"> 
+            <label for="OOPs using Java">OOPs using Java</label> 
+            <br> 
+            <input type="checkbox" name="subjects" id="OperatingSystems"> 
+            <label for="OperatingSystems">OperatingSystems</label> 
+            <br> 
+            <input type="checkbox" name="subjects" id="dbms"> 
+            <label for="dbms">DBMS</label> 
+            <br> 
+            <input type="checkbox" name="subjects" id="ai"> 
+            <label for="ai">Artificial Intelligence</label> 
+            <br> 
+            <label for="Electives">Electives</label><br> 
+            <input type="radio" name="Electives" id="e"> 
+            <label for="e">Entreprenurship</label><br> 
+            <input type="radio" name="Electives" id="c"> 
+            <label for="c">conventional energy resources</label><br> 
+            <input type="radio" name="Electives" id="n"> 
+            <label for="n">Cybersecurity</label><br><br> 
+            <input type="submit" value="Submit"><br> 
+           </form> 
+        
+    </body> 
+</html>

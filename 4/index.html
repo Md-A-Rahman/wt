@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Program 4</title> 
+    
+</head> 
+<body> 
+   <p id="greeting"></p> 
+   <p id="lucky-number"></p> 
+   <p id="last-modified"></p> 
+   <script> 
+    const date=new Date(); 
+   const hours=date.getHours(); 
+   let greeting; 
+   if(hours<12) 
+   { 
+     greeting='Good Morning'; 
+   } 
+   else if(hours<18) 
+   { 
+     greeting='Good Afternoon'; 
+   } 
+   else{ 
+     greeting='Good Evening'; 
+    
+   } 
+   document.getElementById("greeting").innerHTML=greeting; 
+   const luckynumber=Math.floor(Math.random()*10); 
+   document.getElementById('lucky-number').innerHTML=`The lucky number is 
+${luckynumber}`; 
+   const lastmodified=document.lastModified; 
+   document.getElementById('last-modified').innerHTML=`Last Modified:${lastmodified}`; 
+ </script> 
+</body> 
+ 
+ 
+ 
+ 
+ 
+ 
+</html>

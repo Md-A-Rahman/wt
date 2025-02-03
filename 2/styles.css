@@ -1,0 +1,40 @@
+body{ 
+    background-color:wheat; 
+} 
+.anchortags 
+{ 
+    border-style:solid; 
+    background-color:darksalmon; 
+} 
+h1 
+{ 
+   color:brown; 
+   font-family: Georgia, 'Times New Roman', Times, serif; 
+   text-align: center; 
+} 
+h3{ 
+    color:darkgreen; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align:left; 
+} 
+ 
+ 
+.csephoto 
+{ 
+    float:right; 
+    border-color: violet; 
+    border-style:solid; 
+    
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+.peos 
+{ 
+    background-color:darksalmon; 
+    font-size:60; 
+    text-align:center; 
+}

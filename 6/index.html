@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>EVENT HANDLING PROGRAM 6</title> 
+</head> 
+<script> 
+    function instructions() 
+    { 
+        alert("Read the iNstructions Carefully"); 
+    } 
+    function validate() 
+    { 
+        alert("Validation"); 
+    } 
+    function ptadisplay() 
+    { 
+       alert("Cleaning Process....") 
+    } 
+    function ptadisplay() 
+    { 
+         var n1=document.getElementById("cta"); 
+         var n2=document.getElementById("pta"); 
+        //  alert('hello'); 
+        // // document.getElementById('pta').innerHTML=n1; 
+         n2.value=n1.value; 
+       // document.getElementById("pta").disabled = true; 
+        
+ 
+ 
+    } 
+    function focusdisplay() 
+    { 
+        var inptext=document.getElementById('phone'); 
+ 
+ 
+ 
+ 
+ 
+ 
+        inptext.style.color='red'; 
+    } 
+    function blurdisplay() 
+    { 
+        var inptext=document.getElementById('phone'); 
+        inptext.style.color='black'; 
+    } 
+</script> 
+<body onload="instructions();"> 
+    <h1>Javascript Event Handling</h1> 
+    <form onsubmit="validate();" onreset="clean();"> 
+        Name: <input type="text" id="sname" onblur="alert('Name Required');"><br><br> 
+        Phone Number: <input type="text" id="phone" 
+onfocus="focusdisplay()";onblur="blurdisplay()";><br><br> 
+        Contact Address: <textarea id="cta" name="cta"></textarea><br><br> 
+        Permanent Address: <textarea id="pta" name="pta"></textarea><br><br> 
+        <input type="button" value="Same as Contact Address" id="bt1" 
+onclick="ptadisplay()"/><br><br> 
+        <a href="" id="l1">Read Instructions</a><br><br> 
+        <input type="submit" id="sb"><br><br> 
+        <input type="reset" id="sb"><br><br> 
+        <input type="button" value="Button-3" id="bt3"/><br><br> 
+    </form> 
+    
+</body> 
+<script> 
+    var link =document.getElementById('l1'); 
+    link.onClick=function() 
+    { 
+        alert('Instructions Clicked....'); 
+    } 
+    var b3=document.getElementById('bt3'); 
+    b3.addEventListener("click",function() 
+{ 
+    alert("Button 3 Clicked Listener 1 "); 
+},false); 
+b3.addEventListener("click",function() 
+{ 
+    alert("Button 3 clicked listener 2"); 
+},false); 
+</script> 
+</html>
