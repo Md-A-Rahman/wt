@@ -1,0 +1,28 @@
+import logo from './logo.svg'; 
+import './App.css'; 
+function App() { 
+var header="Muffakham Jah College"; 
+var mynav=( 
+<div> 
+<a href="">Faculty</a><br></br> 
+<a href="">Staff</a><br></br> 
+<a href="">Student</a><br></br> 
+</div> 
+ 
+  ); 
+  var dd=new Date(); 
+  return ( 
+    <div className="App"> 
+      <h1>{header}</h1> 
+      <h2 style={{color:"blue"}}>CSE Department</h2> 
+      {mynav} 
+      {dd.toDateString()} 
+      {/* <GetVision /> */} 
+      <h3>Mission</h3> 
+      <p>Mentoring students towards a successful professional career in a global environment thru 
+good quality education</p> 
+    </div> 
+  ); 
+} 
+ 
+export default App;
