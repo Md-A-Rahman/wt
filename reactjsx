@@ -26,3 +26,23 @@ good quality education</p>
 } 
  
 export default App;
+
+
+--------------------------------------------------------------------------------------------------------
+
+20.  Program-10: Demonstrate rendering HTML and JSX using React.js 
+ Steps to be followed 
+1. Create folder 
+2. Open VS Code 
+3. Goto file->open folder and select folder  
+4. Open terminal and execute: 
+a. In College Proxy: npm config set proxy http://10.2.0.25:3128 
+b. npm install -g create-react-app 
+5. npx create-react-app . //make sure folder 10 is empty 
+6. npm start 
+7. wait till installation completes and subfolders and files are created 
+8. Open src and open App.js file 
+9. Remove all statements except the first div statement and last div statement from 
+App function inside return function 
+10. Save the App.js file and Reload the page in the web browser 
+11. Type the code in App.js file
